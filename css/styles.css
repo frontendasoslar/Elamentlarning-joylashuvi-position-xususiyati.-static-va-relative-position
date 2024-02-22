@@ -1,0 +1,47 @@
+.main-content {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 10px solid #000;
+  font-size: 50px;
+  background-color: rgba(255, 217, 0, 0.5);
+}
+
+
+/* position: ning qiymatlari atatic, relative, absolute, fixed, stickiy */
+            /* position: bilan birga ishlatiladigan teglar */
+/* top, right, bottom, left */
+/* z-index */
+
+/* Elementlarning position: qiymati ta'biy qiymati static bo'ladi va positioni static bo'lgan elementga  top, right, bottom, left, z-index qiymatlarni bersak ham ularni qabul qilmaydi*/
+
+
+/* position: relative; ni ishlatib ko'ramiz */
+.box-relative {
+  position: relative;
+  /* relative - nisbiy */
+  right: -100px;
+  /* o'ng tomonga 100px suriladi */
+  bottom: 50px;
+  /* tepega 50px suruladi */
+  /* bu holatda element o'z joyini yo'qotmaydi ya'ni unga ajratilgan joy o'zgarmaydi lekin element 100px o'ng, 50px tepaga chiqib qoladi va boshqa elementninf ustiga chiqib ketadi */
+  z-index: -1;
+  /* z-index: -1; da element relative elementi static elementini ostiga o'tib orqasiga o'tib oladi */
+  /* z-index: 1; da relative elementini ostiga o'tib oladi */
+  /* demek z-index: -1; element unga qo'shni elementning o'tiga o'tib oladi,  z-index: 1; da esa ustiga o'tib oladi*/
+}
